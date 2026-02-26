@@ -12,6 +12,7 @@
   <title>Bilal Furniture Akola | Premium Wooden Furniture & Custom Work</title>
   <meta name="description" content="Bilal Furniture in Akola offers premium wooden furniture—custom & ready-made. Beds, sofas, dining, wardrobes, TV units, office furniture, doors & windows. Call/WhatsApp 8180025006." />
   <meta name="keywords" content="Bilal Furniture, Akola furniture, wooden furniture Akola, custom furniture Akola, beds, sofas, dining tables, wardrobes, TV units, office furniture" />
+  <!-- ✅ IMPORTANT: Replace example.com with your real domain OR GitHub Pages URL -->
   <link rel="canonical" href="https://example.com/" />
   <meta name="robots" content="index, follow" />
 
@@ -19,6 +20,7 @@
   <meta property="og:title" content="Bilal Furniture Akola | Premium Wooden Furniture" />
   <meta property="og:description" content="Premium wooden furniture in Akola—custom & ready-made with durable build and premium finishing. Call/WhatsApp 8180025006." />
   <meta property="og:type" content="website" />
+  <!-- ✅ IMPORTANT: Replace example.com with your real domain OR GitHub Pages URL -->
   <meta property="og:url" content="https://example.com/" />
   <meta property="og:image" content="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=70" />
 
@@ -213,6 +215,21 @@
     .icon{
       width: 16px; height:16px;
       display:inline-block;
+    }
+
+    /* ✅ Premium WhatsApp button style */
+    .btn-wa{
+      border-color: rgba(37,211,102,0.35);
+      background: rgba(37,211,102,0.14);
+    }
+    .btn-wa:hover{
+      background: rgba(37,211,102,0.18);
+      border-color: rgba(37,211,102,0.45);
+    }
+    .btn-wa .icon{
+      width: 17px;
+      height: 17px;
+      color: #25D366;
     }
 
     /* Mobile menu */
@@ -574,7 +591,10 @@
       border: 1px solid rgba(255,255,255,0.10);
       background: rgba(255,255,255,0.03);
       position: relative;
-      min-height: 140px;
+
+      /* ✅ Fix empty-looking tiles: consistent sizing */
+      aspect-ratio: 16/10;
+      min-height: unset;
     }
     .g-item::after{
       content:"";
@@ -599,6 +619,27 @@
       margin-top: 10px;
       color: rgba(245,239,230,0.72);
       font-size: 12.8px;
+    }
+
+    /* ✅ Image fallback (prevents black/empty cards if image fails) */
+    .img-fallback{
+      background:
+        radial-gradient(900px 500px at 20% 20%, rgba(199,163,90,0.18), transparent 55%),
+        linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02)) !important;
+      position: relative;
+    }
+    .img-fallback::before{
+      content: "Image placeholder";
+      position:absolute;
+      left: 12px;
+      bottom: 12px;
+      font-size: 12px;
+      color: rgba(245,239,230,0.85);
+      padding: 7px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.12);
+      background: rgba(15,11,8,0.55);
+      backdrop-filter: blur(8px);
     }
 
     /* Reviews */
@@ -672,7 +713,7 @@
       font-size: 12.5px;
       color: rgba(245,239,230,0.84);
     }
-    input, textarea, select{
+    input, textarea{
       width:100%;
       padding: 12px 12px;
       border-radius: 14px;
@@ -684,7 +725,7 @@
       font-size: 13.5px;
       transition: border-color .2s ease, background .2s ease;
     }
-    input:focus, textarea:focus, select:focus{
+    input:focus, textarea:focus{
       border-color: rgba(199,163,90,0.45);
       background: rgba(255,255,255,0.07);
     }
@@ -845,6 +886,9 @@
       line-height: 1.1;
     }
 
+    /* ✅ Make floating WhatsApp icon proper green */
+    .wa-ic svg{ color: #25D366; }
+
     /* Utility */
     .divider{
       height: 1px;
@@ -876,14 +920,13 @@
       .grid-4{ grid-template-columns: 1fr; }
       .gallery-grid{ grid-template-columns: repeat(2, 1fr); }
       .map-placeholder{ height: 280px; }
-      .header-actions .btn-gold{ display:none; } /* keep header clean on very small screens */
+      .header-actions .btn-gold{ display:none; }
     }
   </style>
 </head>
 
 <body>
   <!-- WhatsApp Floating Button (bottom-right) -->
-  <!-- ✅ Replace WhatsApp message text if you want -->
   <a class="wa-float" href="https://wa.me/918180025006?text=Hi%20Bilal%20Furniture%2C%20I%20want%20a%20quote%20for%20wooden%20furniture." target="_blank" rel="noopener">
     <span class="wa-ic" aria-hidden="true">
       <!-- WhatsApp icon (inline SVG) -->
@@ -921,11 +964,11 @@
 
         <div class="header-actions">
           <a class="btn btn-gold" href="tel:+918180025006" aria-label="Call Now">
-            <span aria-hidden="true">📞</span> Call Now
+            📞 Call Now
           </a>
 
           <button class="btn menu-btn" id="menuBtn" aria-label="Open Menu" aria-expanded="false">
-            <span aria-hidden="true">☰</span> Menu
+            ☰ Menu
           </button>
         </div>
       </div>
@@ -958,7 +1001,15 @@
 
           <div class="hero-actions">
             <a class="btn btn-gold" href="tel:+918180025006">📞 Call Now</a>
-            <a class="btn" href="https://wa.me/918180025006?text=Hi%20Bilal%20Furniture%2C%20I%20want%20to%20enquire%20about%20wooden%20furniture." target="_blank" rel="noopener">💬 WhatsApp</a>
+
+            <a class="btn btn-wa" href="https://wa.me/918180025006?text=Hi%20Bilal%20Furniture%2C%20I%20want%20to%20enquire%20about%20wooden%20furniture." target="_blank" rel="noopener">
+              <svg class="icon" viewBox="0 0 32 32" aria-hidden="true">
+                <path fill="currentColor" d="M19.1 17.7c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.7.2-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.4-2.3-1.4-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.1-.3.2-.5.1-.2 0-.4 0-.6 0-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.7 0 1.6 1.2 3.1 1.4 3.3.2.2 2.3 3.5 5.6 4.9.8.3 1.4.6 1.9.7.8.3 1.5.2 2 .1.6-.1 1.7-.7 1.9-1.3.2-.6.2-1.1.1-1.3-.1-.2-.3-.2-.6-.4z"/>
+                <path fill="currentColor" d="M16 3C9 3 3.3 8.7 3.3 15.7c0 2.2.6 4.3 1.7 6.2L3 29l7.3-1.9c1.8 1 3.9 1.6 6.1 1.6 7 0 12.7-5.7 12.7-12.7C29 8.7 23 3 16 3zm0 23c-2 0-4-.5-5.7-1.6l-.4-.2-4.3 1.1 1.1-4.2-.3-.4c-1.1-1.7-1.7-3.6-1.7-5.7C4.7 9.7 9.7 4.7 16 4.7S27.3 9.7 27.3 16 22.3 26 16 26z"/>
+              </svg>
+              WhatsApp
+            </a>
+
             <a class="btn" href="#quote">📝 Get a Quote</a>
           </div>
 
@@ -1090,7 +1141,8 @@
         </article>
 
         <article class="product-card reveal">
-          <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1582582621959-48d27397dc6f?auto=format&fit=crop&w=1400&q=70');"></div>
+          <!-- ✅ More reliable sofa image -->
+          <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1400&q=70');"></div>
           <div class="product-body">
             <h3 class="product-title">Sofas</h3>
             <p class="product-desc">Comfortable designs with sturdy wooden structure.</p>
@@ -1114,7 +1166,8 @@
         </article>
 
         <article class="product-card reveal">
-          <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1616627451712-39ad1b9d8d2d?auto=format&fit=crop&w=1400&q=70');"></div>
+          <!-- ✅ More reliable TV unit image -->
+          <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1519710887722-0d3c6a1f06b9?auto=format&fit=crop&w=1400&q=70');"></div>
           <div class="product-body">
             <h3 class="product-title">TV Units</h3>
             <p class="product-desc">Modern units with clean lines and finish.</p>
@@ -1346,12 +1399,19 @@
         <div class="card quote-left reveal">
           <h3 style="font-family:'Playfair Display',serif; margin:0; font-size:18px;">Quick enquiry • Better suggestions</h3>
           <p>
-            Tell us what you need (bed, wardrobe, sofa, etc.). If you share your approximate budget, we can suggest the
-            best design and material options quickly.
+            Tell us what you need (bed, wardrobe, sofa, etc.). If you share your approximate
+            budget, we can suggest the best design and material options quickly.
           </p>
           <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap;">
             <a class="btn btn-gold" href="tel:+918180025006">📞 Call 8180025006</a>
-            <a class="btn" href="https://wa.me/918180025006?text=Hi%20Bilal%20Furniture%2C%20I%20want%20a%20quote%20for%20wooden%20furniture." target="_blank" rel="noopener">💬 WhatsApp</a>
+
+            <a class="btn btn-wa" href="https://wa.me/918180025006?text=Hi%20Bilal%20Furniture%2C%20I%20want%20a%20quote%20for%20wooden%20furniture." target="_blank" rel="noopener">
+              <svg class="icon" viewBox="0 0 32 32" aria-hidden="true">
+                <path fill="currentColor" d="M19.1 17.7c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.7.2-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.4-2.3-1.4-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.1-.3.2-.5.1-.2 0-.4 0-.6 0-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.7 0 1.6 1.2 3.1 1.4 3.3.2.2 2.3 3.5 5.6 4.9.8.3 1.4.6 1.9.7.8.3 1.5.2 2 .1.6-.1 1.7-.7 1.9-1.3.2-.6.2-1.1.1-1.3-.1-.2-.3-.2-.6-.4z"/>
+                <path fill="currentColor" d="M16 3C9 3 3.3 8.7 3.3 15.7c0 2.2.6 4.3 1.7 6.2L3 29l7.3-1.9c1.8 1 3.9 1.6 6.1 1.6 7 0 12.7-5.7 12.7-12.7C29 8.7 23 3 16 3zm0 23c-2 0-4-.5-5.7-1.6l-.4-.2-4.3 1.1 1.1-4.2-.3-.4c-1.1-1.7-1.7-3.6-1.7-5.7C4.7 9.7 9.7 4.7 16 4.7S27.3 9.7 27.3 16 22.3 26 16 26z"/>
+              </svg>
+              WhatsApp
+            </a>
           </div>
         </div>
 
@@ -1456,7 +1516,6 @@
           </div>
 
           <div class="map-actions">
-            <!-- ✅ Replace the link with your exact Google Maps business/location link if you have one -->
             <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Near%20Super%20Saw%20Mill%2C%20Mankarna%20Plot%2C%20Akola" target="_blank" rel="noopener">🗺️ Open in Google Maps</a>
             <a class="btn btn-gold" href="tel:+918180025006">📞 Call</a>
           </div>
@@ -1556,7 +1615,6 @@
         if (successMsg) successMsg.style.display = 'block';
         quoteForm.reset();
 
-        // Auto-hide after a few seconds (optional)
         setTimeout(() => {
           if (successMsg) successMsg.style.display = 'none';
         }, 5000);
@@ -1567,6 +1625,42 @@
     // Footer year
     // =========================
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // =========================
+    // Background-image loader + fallback (fixes broken/empty cards)
+    // =========================
+    function extractBgUrl(el){
+      const bg = getComputedStyle(el).backgroundImage;
+      const match = bg.match(/url\(["']?(.+?)["']?\)/i);
+      return match ? match[1] : null;
+    }
+
+    function testImage(url){
+      return new Promise((resolve) => {
+        const img = new Image();
+        img.onload = () => resolve(true);
+        img.onerror = () => resolve(false);
+        img.src = url;
+      });
+    }
+
+    async function applyBgFallback(selector){
+      const els = document.querySelectorAll(selector);
+      for (const el of els){
+        const url = extractBgUrl(el);
+        if(!url){
+          el.classList.add("img-fallback");
+          continue;
+        }
+        const ok = await testImage(url);
+        if(!ok){
+          el.classList.add("img-fallback");
+        }
+      }
+    }
+
+    applyBgFallback(".product-img");
+    applyBgFallback(".g-item");
   </script>
 </body>
 </html>
