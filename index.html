@@ -1,0 +1,1572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- =========================
+    Bilal Furniture - Premium One Page Website
+    Ready for GitHub Pages Deploy
+    ========================= -->
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Bilal Furniture Akola | Premium Wooden Furniture & Custom Work</title>
+  <meta name="description" content="Bilal Furniture in Akola offers premium wooden furniture—custom & ready-made. Beds, sofas, dining, wardrobes, TV units, office furniture, doors & windows. Call/WhatsApp 8180025006." />
+  <meta name="keywords" content="Bilal Furniture, Akola furniture, wooden furniture Akola, custom furniture Akola, beds, sofas, dining tables, wardrobes, TV units, office furniture" />
+  <link rel="canonical" href="https://example.com/" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Bilal Furniture Akola | Premium Wooden Furniture" />
+  <meta property="og:description" content="Premium wooden furniture in Akola—custom & ready-made with durable build and premium finishing. Call/WhatsApp 8180025006." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://example.com/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=70" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Bilal Furniture Akola | Premium Wooden Furniture" />
+  <meta name="twitter:description" content="Premium wooden furniture in Akola—custom & ready-made. Call/WhatsApp 8180025006." />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=70" />
+
+  <!-- Google Fonts (Premium Pairing) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- JSON-LD LocalBusiness Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Bilal Furniture",
+    "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=70",
+    "telephone": "+91-8180025006",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Near Super Saw Mill, Mankarna Plot",
+      "addressLocality": "Akola",
+      "addressRegion": "Maharashtra",
+      "addressCountry": "IN"
+    },
+    "openingHours": "Mo-Su 10:00-17:00",
+    "priceRange": "₹₹",
+    "url": "https://example.com/"
+  }
+  </script>
+
+  <style>
+    /* =========================
+      THEME: Luxury furniture showroom
+      Colors: dark wood brown + cream + subtle gold accents
+      Fonts: Playfair Display (headings), Poppins (body)
+      ========================= */
+
+    :root{
+      --bg: #0f0b08;
+      --panel: rgba(255,255,255,0.04);
+      --panel2: rgba(255,255,255,0.06);
+      --text: #f5efe6;
+      --muted: rgba(245,239,230,0.78);
+      --cream: #f5efe6;
+      --brown: #2a1a12;
+      --gold: #c7a35a;
+      --gold2:#e0c78a;
+      --border: rgba(255,255,255,0.10);
+      --shadow: 0 18px 50px rgba(0,0,0,0.45);
+      --radius: 18px;
+      --radius2: 26px;
+      --max: 1180px;
+    }
+
+    *{ box-sizing:border-box; }
+    html{ scroll-behavior:smooth; }
+    body{
+      margin:0;
+      font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: radial-gradient(1200px 600px at 20% 0%, rgba(199,163,90,0.18), transparent 60%),
+                  radial-gradient(1000px 700px at 100% 20%, rgba(224,199,138,0.10), transparent 60%),
+                  linear-gradient(180deg, #0b0705, #0f0b08 55%, #0a0705);
+      color:var(--text);
+      overflow-x:hidden;
+    }
+
+    a{ color:inherit; text-decoration:none; }
+    img{ max-width:100%; display:block; }
+
+    .container{
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    /* Subtle entrance animations */
+    .reveal{
+      opacity:0;
+      transform: translateY(14px);
+      transition: opacity .8s ease, transform .8s ease;
+    }
+    .reveal.show{
+      opacity:1;
+      transform: translateY(0);
+    }
+
+    /* =========================
+      HEADER
+      ========================= */
+    .header{
+      position: sticky;
+      top:0;
+      z-index:999;
+      background: rgba(15,11,8,0.72);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+    }
+    .header-inner{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding: 14px 0;
+      gap: 14px;
+    }
+
+    .logo{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      min-width: 170px;
+    }
+    .logo-badge{
+      width: 34px; height:34px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, rgba(199,163,90,0.9), rgba(245,239,230,0.18));
+      border: 1px solid rgba(199,163,90,0.35);
+      box-shadow: 0 10px 30px rgba(199,163,90,0.18);
+      display:grid;
+      place-items:center;
+      color:#1b120d;
+      font-weight:700;
+    }
+    .logo-text{
+      font-family:"Playfair Display", serif;
+      letter-spacing: 0.2px;
+      font-size: 20px;
+      line-height: 1.1;
+    }
+    .logo-sub{
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+
+    nav{
+      display:flex;
+      gap: 18px;
+      align-items:center;
+    }
+    nav a{
+      font-size: 13.5px;
+      color: rgba(245,239,230,0.86);
+      padding: 10px 10px;
+      border-radius: 12px;
+      transition: background .25s ease, color .25s ease;
+      white-space:nowrap;
+    }
+    nav a:hover{
+      background: rgba(255,255,255,0.06);
+      color: var(--cream);
+    }
+
+    .header-actions{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      min-width: 170px;
+      justify-content:flex-end;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      border-radius: 999px;
+      padding: 12px 16px;
+      font-weight: 600;
+      font-size: 13.5px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.06);
+      color: var(--cream);
+      transition: transform .18s ease, background .25s ease, border-color .25s ease;
+      cursor:pointer;
+      user-select:none;
+    }
+    .btn:hover{ transform: translateY(-1px); background: rgba(255,255,255,0.09); border-color: rgba(255,255,255,0.18); }
+    .btn:active{ transform: translateY(0); }
+
+    .btn-gold{
+      background: linear-gradient(135deg, rgba(199,163,90,0.95), rgba(224,199,138,0.35));
+      border-color: rgba(199,163,90,0.55);
+      color: #1b120d;
+      box-shadow: 0 14px 40px rgba(199,163,90,0.20);
+    }
+    .btn-gold:hover{ background: linear-gradient(135deg, rgba(224,199,138,0.95), rgba(199,163,90,0.35)); }
+
+    .icon{
+      width: 16px; height:16px;
+      display:inline-block;
+    }
+
+    /* Mobile menu */
+    .menu-btn{
+      display:none;
+      border-radius: 14px;
+      padding: 10px 12px;
+    }
+    .mobile-nav{
+      display:none;
+      border-top: 1px solid var(--border);
+      padding: 12px 0 16px;
+    }
+    .mobile-nav a{
+      display:block;
+      padding: 12px 12px;
+      border-radius: 14px;
+      margin: 4px 0;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+
+    /* =========================
+      HERO
+      ========================= */
+    .hero{
+      position:relative;
+      padding: 72px 0 36px;
+      overflow:hidden;
+    }
+    .hero::before{
+      content:"";
+      position:absolute;
+      inset:-2px;
+      background:
+        linear-gradient(180deg, rgba(15,11,8,0.35), rgba(15,11,8,0.95)),
+        url("https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=2000&q=70");
+      background-size: cover;
+      background-position: center;
+      filter: saturate(1.05) contrast(1.02);
+      z-index:-2;
+    }
+    .hero::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        radial-gradient(800px 300px at 20% 15%, rgba(199,163,90,0.18), transparent 55%),
+        radial-gradient(700px 400px at 80% 20%, rgba(245,239,230,0.10), transparent 55%),
+        radial-gradient(600px 300px at 60% 80%, rgba(199,163,90,0.10), transparent 60%);
+      z-index:-1;
+    }
+
+    .hero-grid{
+      display:grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 24px;
+      align-items:center;
+    }
+
+    .hero-card{
+      background: linear-gradient(180deg, rgba(255,255,255,0.07), rgba(255,255,255,0.03));
+      border: 1px solid rgba(255,255,255,0.10);
+      box-shadow: var(--shadow);
+      border-radius: var(--radius2);
+      padding: 28px;
+    }
+
+    .kicker{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      font-size: 12.5px;
+      color: rgba(245,239,230,0.86);
+      background: rgba(199,163,90,0.10);
+      border: 1px solid rgba(199,163,90,0.22);
+      padding: 10px 12px;
+      border-radius: 999px;
+      margin-bottom: 14px;
+      width: fit-content;
+    }
+    .dot{
+      width: 8px; height:8px; border-radius:50%;
+      background: var(--gold);
+      box-shadow: 0 0 0 6px rgba(199,163,90,0.12);
+    }
+
+    h1{
+      font-family:"Playfair Display", serif;
+      font-weight: 800;
+      font-size: clamp(30px, 4vw, 52px);
+      line-height: 1.08;
+      margin: 0 0 12px;
+      letter-spacing: 0.2px;
+    }
+    .hero p{
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: 14.5px;
+      line-height: 1.8;
+      max-width: 55ch;
+    }
+
+    .hero-actions{
+      display:flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .hero-stats{
+      display:grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin-top: 18px;
+    }
+    .stat{
+      border-radius: 18px;
+      padding: 14px;
+      border: 1px solid rgba(255,255,255,0.10);
+      background: rgba(255,255,255,0.04);
+    }
+    .stat strong{
+      display:block;
+      font-family:"Playfair Display", serif;
+      font-size: 18px;
+      color: var(--cream);
+      margin-bottom: 4px;
+    }
+    .stat span{
+      font-size: 12.5px;
+      color: rgba(245,239,230,0.75);
+    }
+
+    .hero-side{
+      display:grid;
+      gap: 12px;
+    }
+    .showroom-card{
+      border-radius: var(--radius2);
+      border: 1px solid rgba(255,255,255,0.10);
+      background: rgba(255,255,255,0.04);
+      box-shadow: 0 18px 50px rgba(0,0,0,0.35);
+      overflow:hidden;
+    }
+    .showroom-img{
+      height: 220px;
+      background:
+        linear-gradient(180deg, rgba(15,11,8,0.15), rgba(15,11,8,0.88)),
+        url("https://images.unsplash.com/photo-1615873968403-89e068629265?auto=format&fit=crop&w=1400&q=70");
+      background-size:cover;
+      background-position:center;
+    }
+    .showroom-body{
+      padding: 16px 16px 18px;
+    }
+    .showroom-title{
+      font-family:"Playfair Display", serif;
+      font-weight: 700;
+      margin:0 0 6px;
+      font-size: 18px;
+    }
+    .showroom-body p{
+      margin:0 0 12px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.7;
+    }
+    .mini-row{
+      display:flex;
+      gap: 10px;
+      flex-wrap:wrap;
+    }
+    .pill{
+      font-size: 12px;
+      padding: 8px 10px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.10);
+      color: rgba(245,239,230,0.85);
+    }
+
+    /* =========================
+      SECTIONS
+      ========================= */
+    section{
+      padding: 56px 0;
+    }
+    .section-head{
+      display:flex;
+      align-items:flex-end;
+      justify-content:space-between;
+      gap:16px;
+      margin-bottom: 18px;
+    }
+    h2{
+      font-family:"Playfair Display", serif;
+      font-size: clamp(24px, 2.4vw, 34px);
+      margin:0;
+      letter-spacing: 0.2px;
+    }
+    .section-sub{
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: 13.5px;
+      line-height: 1.7;
+      max-width: 70ch;
+    }
+
+    .card{
+      border-radius: var(--radius2);
+      border: 1px solid rgba(255,255,255,0.10);
+      background: linear-gradient(180deg, rgba(255,255,255,0.055), rgba(255,255,255,0.03));
+      box-shadow: 0 14px 40px rgba(0,0,0,0.30);
+    }
+
+    /* About */
+    .about-grid{
+      display:grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 18px;
+      align-items:stretch;
+    }
+    .about-content{
+      padding: 22px;
+    }
+    .about-content p{
+      margin: 0 0 12px;
+      color: var(--muted);
+      line-height: 1.9;
+      font-size: 14px;
+    }
+    .about-points{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      padding: 18px;
+    }
+    .point{
+      display:flex;
+      gap: 10px;
+      padding: 12px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.10);
+    }
+    .check{
+      width: 22px; height:22px;
+      border-radius: 9px;
+      background: rgba(199,163,90,0.16);
+      border: 1px solid rgba(199,163,90,0.30);
+      display:grid; place-items:center;
+      flex: 0 0 22px;
+      margin-top: 2px;
+    }
+    .point b{
+      display:block;
+      font-size: 13.5px;
+      margin-bottom: 2px;
+    }
+    .point span{
+      display:block;
+      font-size: 12.5px;
+      color: rgba(245,239,230,0.78);
+      line-height: 1.6;
+    }
+
+    /* Products */
+    .grid-4{
+      display:grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+    .product-card{
+      overflow:hidden;
+      border-radius: 22px;
+      border: 1px solid rgba(255,255,255,0.10);
+      background: rgba(255,255,255,0.04);
+      transition: transform .2s ease, border-color .25s ease, background .25s ease;
+    }
+    .product-card:hover{
+      transform: translateY(-4px);
+      border-color: rgba(199,163,90,0.30);
+      background: rgba(255,255,255,0.06);
+    }
+    .product-img{
+      height: 150px;
+      background-size: cover;
+      background-position:center;
+      position: relative;
+    }
+    .product-img::after{
+      content:"";
+      position:absolute; inset:0;
+      background: linear-gradient(180deg, rgba(15,11,8,0.05), rgba(15,11,8,0.88));
+    }
+    .product-body{
+      padding: 14px 14px 16px;
+    }
+    .product-title{
+      font-family:"Playfair Display", serif;
+      font-weight: 700;
+      margin:0 0 6px;
+      font-size: 16.5px;
+    }
+    .product-desc{
+      margin:0;
+      color: rgba(245,239,230,0.78);
+      font-size: 12.8px;
+      line-height: 1.65;
+    }
+
+    /* Why choose us */
+    .why-grid{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    .why-item{
+      padding: 16px;
+      border-radius: 22px;
+      border: 1px solid rgba(255,255,255,0.10);
+      background: rgba(255,255,255,0.04);
+      display:flex;
+      gap: 12px;
+      align-items:flex-start;
+    }
+    .why-ic{
+      width: 40px; height:40px;
+      border-radius: 16px;
+      background: rgba(199,163,90,0.15);
+      border: 1px solid rgba(199,163,90,0.28);
+      display:grid;
+      place-items:center;
+      flex:0 0 40px;
+      box-shadow: 0 16px 40px rgba(199,163,90,0.12);
+    }
+    .why-item b{
+      display:block;
+      margin-bottom: 4px;
+      font-size: 13.8px;
+    }
+    .why-item span{
+      color: rgba(245,239,230,0.78);
+      font-size: 12.8px;
+      line-height: 1.7;
+      display:block;
+    }
+
+    /* Gallery */
+    .gallery-grid{
+      display:grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 10px;
+    }
+    .g-item{
+      border-radius: 18px;
+      overflow:hidden;
+      border: 1px solid rgba(255,255,255,0.10);
+      background: rgba(255,255,255,0.03);
+      position: relative;
+      min-height: 140px;
+    }
+    .g-item::after{
+      content:"";
+      position:absolute; inset:0;
+      background: linear-gradient(180deg, rgba(15,11,8,0.15), rgba(15,11,8,0.72));
+      pointer-events:none;
+    }
+    .g-item span{
+      position:absolute;
+      left: 10px;
+      bottom: 10px;
+      font-size: 12px;
+      color: rgba(245,239,230,0.88);
+      padding: 7px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.12);
+      background: rgba(15,11,8,0.55);
+      backdrop-filter: blur(8px);
+    }
+
+    .note{
+      margin-top: 10px;
+      color: rgba(245,239,230,0.72);
+      font-size: 12.8px;
+    }
+
+    /* Reviews */
+    .reviews{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+    .review{
+      padding: 18px;
+      border-radius: 22px;
+      border: 1px solid rgba(255,255,255,0.10);
+      background: rgba(255,255,255,0.04);
+    }
+    .stars{
+      display:flex;
+      gap: 4px;
+      margin-bottom: 10px;
+      color: var(--gold2);
+    }
+    .review p{
+      margin:0 0 12px;
+      color: rgba(245,239,230,0.82);
+      font-size: 13px;
+      line-height: 1.8;
+    }
+    .review .who{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap: 10px;
+      color: rgba(245,239,230,0.72);
+      font-size: 12px;
+    }
+    .badge{
+      font-size: 11.5px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(199,163,90,0.12);
+      border: 1px solid rgba(199,163,90,0.22);
+      color: rgba(245,239,230,0.86);
+      white-space:nowrap;
+    }
+
+    /* Quote form */
+    .quote-grid{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      align-items:stretch;
+    }
+    .quote-left{
+      padding: 22px;
+    }
+    .quote-left p{
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 13.5px;
+      line-height: 1.8;
+    }
+    form{
+      padding: 18px;
+    }
+    .field{
+      display:flex;
+      flex-direction:column;
+      gap: 7px;
+      margin-bottom: 12px;
+    }
+    label{
+      font-size: 12.5px;
+      color: rgba(245,239,230,0.84);
+    }
+    input, textarea, select{
+      width:100%;
+      padding: 12px 12px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,0.12);
+      background: rgba(255,255,255,0.05);
+      color: var(--cream);
+      outline:none;
+      font-family: inherit;
+      font-size: 13.5px;
+      transition: border-color .2s ease, background .2s ease;
+    }
+    input:focus, textarea:focus, select:focus{
+      border-color: rgba(199,163,90,0.45);
+      background: rgba(255,255,255,0.07);
+    }
+    textarea{ min-height: 96px; resize: vertical; }
+
+    .success{
+      display:none;
+      margin-top: 12px;
+      padding: 12px 14px;
+      border-radius: 16px;
+      border: 1px solid rgba(199,163,90,0.35);
+      background: rgba(199,163,90,0.14);
+      color: rgba(245,239,230,0.92);
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    /* Contact */
+    .contact-grid{
+      display:grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 14px;
+      align-items:stretch;
+    }
+    .contact-card{
+      padding: 20px;
+    }
+    .contact-item{
+      display:flex;
+      align-items:flex-start;
+      gap: 12px;
+      padding: 12px;
+      border-radius: 18px;
+      border: 1px solid rgba(255,255,255,0.10);
+      background: rgba(255,255,255,0.04);
+      margin-top: 10px;
+    }
+    .contact-item b{
+      display:block;
+      margin-bottom: 2px;
+      font-size: 13.5px;
+    }
+    .contact-item span, .contact-item a{
+      display:block;
+      font-size: 12.8px;
+      color: rgba(245,239,230,0.78);
+      line-height: 1.6;
+    }
+    .contact-item a:hover{ color: rgba(245,239,230,0.95); text-decoration: underline; }
+
+    .map-wrap{
+      overflow:hidden;
+      border-radius: var(--radius2);
+      border: 1px solid rgba(255,255,255,0.10);
+      background: rgba(255,255,255,0.03);
+    }
+    .map-placeholder{
+      height: 330px;
+      display:grid;
+      place-items:center;
+      padding: 18px;
+      text-align:center;
+      color: rgba(245,239,230,0.85);
+      background:
+        radial-gradient(900px 400px at 20% 10%, rgba(199,163,90,0.14), transparent 55%),
+        radial-gradient(900px 400px at 80% 30%, rgba(245,239,230,0.08), transparent 55%),
+        rgba(255,255,255,0.03);
+    }
+    .map-placeholder p{
+      margin: 8px 0 0;
+      color: rgba(245,239,230,0.72);
+      font-size: 13px;
+      line-height: 1.7;
+    }
+    .map-actions{
+      padding: 14px;
+      border-top: 1px solid rgba(255,255,255,0.10);
+      display:flex;
+      gap: 10px;
+      flex-wrap:wrap;
+      justify-content:flex-end;
+      background: rgba(255,255,255,0.03);
+    }
+
+    /* Footer */
+    footer{
+      border-top: 1px solid rgba(255,255,255,0.10);
+      padding: 30px 0 24px;
+      background: rgba(0,0,0,0.18);
+    }
+    .footer-grid{
+      display:grid;
+      grid-template-columns: 1.2fr 0.8fr 1fr;
+      gap: 14px;
+      align-items:start;
+    }
+    .footer-title{
+      font-family:"Playfair Display", serif;
+      font-size: 18px;
+      margin:0 0 6px;
+    }
+    .footer p, .footer a{
+      color: rgba(245,239,230,0.74);
+      font-size: 13px;
+      line-height: 1.75;
+      margin:0;
+    }
+    .footer a:hover{ color: rgba(245,239,230,0.95); text-decoration: underline; }
+    .quick a{ display:block; padding: 6px 0; }
+    .copy{
+      margin-top: 18px;
+      padding-top: 14px;
+      border-top: 1px solid rgba(255,255,255,0.10);
+      color: rgba(245,239,230,0.62);
+      font-size: 12.5px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap: 10px;
+      flex-wrap:wrap;
+    }
+
+    /* WhatsApp floating button */
+    .wa-float{
+      position: fixed;
+      right: 16px;
+      bottom: 16px;
+      z-index: 999;
+      display:flex;
+      align-items:center;
+      gap: 10px;
+      padding: 12px 14px;
+      border-radius: 999px;
+      background: rgba(37, 211, 102, 0.16);
+      border: 1px solid rgba(37, 211, 102, 0.35);
+      color: var(--cream);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 18px 50px rgba(0,0,0,0.35);
+      transition: transform .18s ease, background .25s ease;
+    }
+    .wa-float:hover{ transform: translateY(-2px); background: rgba(37, 211, 102, 0.20); }
+    .wa-ic{
+      width: 34px; height:34px;
+      border-radius: 14px;
+      display:grid; place-items:center;
+      background: rgba(37,211,102,0.22);
+      border: 1px solid rgba(37,211,102,0.35);
+    }
+    .wa-float small{
+      display:block;
+      font-size: 11.5px;
+      color: rgba(245,239,230,0.78);
+      margin-top: -1px;
+    }
+    .wa-float b{
+      font-size: 13.5px;
+      display:block;
+      line-height: 1.1;
+    }
+
+    /* Utility */
+    .divider{
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.12), transparent);
+      margin: 12px 0 0;
+    }
+
+    /* =========================
+      RESPONSIVE
+      ========================= */
+    @media (max-width: 980px){
+      .hero-grid{ grid-template-columns: 1fr; }
+      .about-grid{ grid-template-columns: 1fr; }
+      .grid-4{ grid-template-columns: repeat(2, 1fr); }
+      .gallery-grid{ grid-template-columns: repeat(3, 1fr); }
+      .reviews{ grid-template-columns: 1fr; }
+      .quote-grid{ grid-template-columns: 1fr; }
+      .contact-grid{ grid-template-columns: 1fr; }
+      .footer-grid{ grid-template-columns: 1fr; }
+      nav{ display:none; }
+      .menu-btn{ display:inline-flex; }
+      .mobile-nav{ display:block; }
+    }
+
+    @media (max-width: 520px){
+      .hero{ padding: 58px 0 28px; }
+      .hero-card{ padding: 20px; }
+      .hero-stats{ grid-template-columns: 1fr; }
+      .grid-4{ grid-template-columns: 1fr; }
+      .gallery-grid{ grid-template-columns: repeat(2, 1fr); }
+      .map-placeholder{ height: 280px; }
+      .header-actions .btn-gold{ display:none; } /* keep header clean on very small screens */
+    }
+  </style>
+</head>
+
+<body>
+  <!-- WhatsApp Floating Button (bottom-right) -->
+  <!-- ✅ Replace WhatsApp message text if you want -->
+  <a class="wa-float" href="https://wa.me/918180025006?text=Hi%20Bilal%20Furniture%2C%20I%20want%20a%20quote%20for%20wooden%20furniture." target="_blank" rel="noopener">
+    <span class="wa-ic" aria-hidden="true">
+      <!-- WhatsApp icon (inline SVG) -->
+      <svg class="icon" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+        <path d="M19.1 17.7c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.7.2-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.4-2.3-1.4-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.1-.3.2-.5.1-.2 0-.4 0-.6 0-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.7 0 1.6 1.2 3.1 1.4 3.3.2.2 2.3 3.5 5.6 4.9.8.3 1.4.6 1.9.7.8.3 1.5.2 2 .1.6-.1 1.7-.7 1.9-1.3.2-.6.2-1.1.1-1.3-.1-.2-.3-.2-.6-.4z"/>
+        <path d="M16 3C9 3 3.3 8.7 3.3 15.7c0 2.2.6 4.3 1.7 6.2L3 29l7.3-1.9c1.8 1 3.9 1.6 6.1 1.6 7 0 12.7-5.7 12.7-12.7C29 8.7 23 3 16 3zm0 23c-2 0-4-.5-5.7-1.6l-.4-.2-4.3 1.1 1.1-4.2-.3-.4c-1.1-1.7-1.7-3.6-1.7-5.7C4.7 9.7 9.7 4.7 16 4.7S27.3 9.7 27.3 16 22.3 26 16 26z"/>
+      </svg>
+    </span>
+    <span>
+      <b>WhatsApp</b>
+      <small>Quick enquiry</small>
+    </span>
+  </a>
+
+  <!-- Sticky Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <a class="logo" href="#home" aria-label="Bilal Furniture Home">
+          <span class="logo-badge">BF</span>
+          <span>
+            <div class="logo-text">Bilal Furniture</div>
+            <div class="logo-sub">Luxury wooden furniture • Akola</div>
+          </span>
+        </a>
+
+        <nav aria-label="Primary">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#products">Products</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <a class="btn btn-gold" href="tel:+918180025006" aria-label="Call Now">
+            <span aria-hidden="true">📞</span> Call Now
+          </a>
+
+          <button class="btn menu-btn" id="menuBtn" aria-label="Open Menu" aria-expanded="false">
+            <span aria-hidden="true">☰</span> Menu
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile nav -->
+      <div class="mobile-nav" id="mobileNav" style="display:none" aria-label="Mobile Navigation">
+        <a href="#home" class="m-link">Home</a>
+        <a href="#about" class="m-link">About</a>
+        <a href="#products" class="m-link">Products</a>
+        <a href="#gallery" class="m-link">Gallery</a>
+        <a href="#reviews" class="m-link">Reviews</a>
+        <a href="#contact" class="m-link">Contact</a>
+        <div class="divider"></div>
+        <a class="btn btn-gold" style="width:100%; justify-content:center; margin-top:10px;" href="tel:+918180025006">📞 Call Now</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main id="home" class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-card reveal">
+          <div class="kicker"><span class="dot"></span> Premium Showroom Experience • Custom & Ready-Made</div>
+          <h1>Premium Wooden Furniture in Akola</h1>
+          <p>
+            Strong wood. Premium finishing. Custom furniture built to match your space and style—
+            from elegant bedrooms to modern living rooms and office setups.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="tel:+918180025006">📞 Call Now</a>
+            <a class="btn" href="https://wa.me/918180025006?text=Hi%20Bilal%20Furniture%2C%20I%20want%20to%20enquire%20about%20wooden%20furniture." target="_blank" rel="noopener">💬 WhatsApp</a>
+            <a class="btn" href="#quote">📝 Get a Quote</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat">
+              <strong>Custom Work</strong>
+              <span>Made-to-measure designs for home & office.</span>
+            </div>
+            <div class="stat">
+              <strong>Premium Finish</strong>
+              <span>Clean polish, smooth edges, showroom look.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-side">
+          <div class="showroom-card reveal">
+            <div class="showroom-img" role="img" aria-label="Premium furniture showroom image"></div>
+            <div class="showroom-body">
+              <h3 class="showroom-title">Luxury Showroom Feel</h3>
+              <p>
+                Visit our workshop/showroom near Super Saw Mill, Mankarna Plot, Akola.
+                See the finishing quality and discuss custom requirements.
+              </p>
+              <div class="mini-row">
+                <span class="pill">Beds</span>
+                <span class="pill">Sofas</span>
+                <span class="pill">Wardrobes</span>
+                <span class="pill">Dining</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card reveal" style="padding:16px 16px 18px;">
+            <div style="display:flex; align-items:center; justify-content:space-between; gap:12px;">
+              <div>
+                <div style="font-family:'Playfair Display',serif; font-weight:700; font-size:16px;">Timings</div>
+                <div style="color:rgba(245,239,230,0.75); font-size:13px; margin-top:4px;">10:00 AM to 5:00 PM</div>
+              </div>
+              <a class="btn" href="#contact">📍 Visit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <h2>About Bilal Furniture</h2>
+          <p class="section-sub">
+            A trusted local furniture business in Akola, focused on quality woodwork, strong build, and premium finishing.
+          </p>
+        </div>
+      </div>
+
+      <div class="about-grid">
+        <div class="card about-content reveal">
+          <p>
+            <b>Bilal Furniture</b> was built with one simple promise: deliver wooden furniture that feels premium,
+            lasts long, and looks perfect in your home. Under the guidance of <b>Mohammad Iqbal</b>, we craft both
+            <b>ready-made</b> and <b>custom</b> furniture with close attention to measurements, balance, and detail.
+          </p>
+          <p>
+            From selecting quality wood to accurate cutting and solid joining, every piece is made for durability.
+            Our finishing is clean and elegant—so your furniture looks like it belongs in a high-end showroom.
+            Whether you want a modern look, classic style, or a custom design to fit your space, we make it happen.
+          </p>
+          <p style="margin-bottom:0;">
+            Visit us near Super Saw Mill, Mankarna Plot, Akola to discuss your requirement, budget, and preferred style.
+          </p>
+        </div>
+
+        <div class="card about-points reveal">
+          <div class="point">
+            <div class="check" aria-hidden="true">✓</div>
+            <div>
+              <b>Quality Wood Selection</b>
+              <span>Strong materials chosen for stability and long life.</span>
+            </div>
+          </div>
+          <div class="point">
+            <div class="check" aria-hidden="true">✓</div>
+            <div>
+              <b>Durable Build</b>
+              <span>Solid joints and structure built to handle daily use.</span>
+            </div>
+          </div>
+          <div class="point">
+            <div class="check" aria-hidden="true">✓</div>
+            <div>
+              <b>Premium Finishing</b>
+              <span>Smooth polish and neat detailing for a luxury look.</span>
+            </div>
+          </div>
+          <div class="point">
+            <div class="check" aria-hidden="true">✓</div>
+            <div>
+              <b>Custom Work</b>
+              <span>Made-to-measure furniture designed for your space.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products / Categories -->
+  <section id="products">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <h2>Products & Categories</h2>
+          <p class="section-sub">Explore our most requested furniture categories. Customizations available for size, finish, and design.</p>
+        </div>
+      </div>
+
+      <div class="grid-4">
+        <!-- ✅ Replace images by changing the background-image URL inside style -->
+        <article class="product-card reveal">
+          <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=1400&q=70');"></div>
+          <div class="product-body">
+            <h3 class="product-title">Beds</h3>
+            <p class="product-desc">Strong frames with premium headboard finishing.</p>
+          </div>
+        </article>
+
+        <article class="product-card reveal">
+          <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1582582621959-48d27397dc6f?auto=format&fit=crop&w=1400&q=70');"></div>
+          <div class="product-body">
+            <h3 class="product-title">Sofas</h3>
+            <p class="product-desc">Comfortable designs with sturdy wooden structure.</p>
+          </div>
+        </article>
+
+        <article class="product-card reveal">
+          <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1549497538-303791108f95?auto=format&fit=crop&w=1400&q=70');"></div>
+          <div class="product-body">
+            <h3 class="product-title">Dining Tables</h3>
+            <p class="product-desc">Elegant dining sets with balanced finishing.</p>
+          </div>
+        </article>
+
+        <article class="product-card reveal">
+          <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1519710887722-0d3c6a1f06b9?auto=format&fit=crop&w=1400&q=70');"></div>
+          <div class="product-body">
+            <h3 class="product-title">Wardrobes</h3>
+            <p class="product-desc">Space-smart storage with premium polish.</p>
+          </div>
+        </article>
+
+        <article class="product-card reveal">
+          <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1616627451712-39ad1b9d8d2d?auto=format&fit=crop&w=1400&q=70');"></div>
+          <div class="product-body">
+            <h3 class="product-title">TV Units</h3>
+            <p class="product-desc">Modern units with clean lines and finish.</p>
+          </div>
+        </article>
+
+        <article class="product-card reveal">
+          <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1400&q=70');"></div>
+          <div class="product-body">
+            <h3 class="product-title">Office Furniture</h3>
+            <p class="product-desc">Desks & storage built for daily work use.</p>
+          </div>
+        </article>
+
+        <article class="product-card reveal">
+          <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1501045661006-fcebe0257c3f?auto=format&fit=crop&w=1400&q=70');"></div>
+          <div class="product-body">
+            <h3 class="product-title">Custom Furniture</h3>
+            <p class="product-desc">Made-to-measure designs for your exact needs.</p>
+          </div>
+        </article>
+
+        <article class="product-card reveal">
+          <div class="product-img" style="background-image:url('https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&w=1400&q=70');"></div>
+          <div class="product-body">
+            <h3 class="product-title">Doors & Windows</h3>
+            <p class="product-desc">Solid wood work with clean fitting and finish.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section id="why">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <h2>Why Choose Us</h2>
+          <p class="section-sub">Premium quality, strong workmanship, and friendly support—from consultation to delivery.</p>
+        </div>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-item reveal">
+          <div class="why-ic" aria-hidden="true">🏆</div>
+          <div>
+            <b>Premium Quality Wood</b>
+            <span>Carefully selected wood for strength and long-lasting performance.</span>
+          </div>
+        </div>
+        <div class="why-item reveal">
+          <div class="why-ic" aria-hidden="true">🪚</div>
+          <div>
+            <b>Custom Designs</b>
+            <span>Furniture made to your size, layout, and style preference.</span>
+          </div>
+        </div>
+        <div class="why-item reveal">
+          <div class="why-ic" aria-hidden="true">✨</div>
+          <div>
+            <b>Expert Finishing</b>
+            <span>Clean polish and detailing for a luxury showroom look.</span>
+          </div>
+        </div>
+        <div class="why-item reveal">
+          <div class="why-ic" aria-hidden="true">💰</div>
+          <div>
+            <b>Affordable Pricing</b>
+            <span>Premium build with value-focused pricing for local customers.</span>
+          </div>
+        </div>
+        <div class="why-item reveal">
+          <div class="why-ic" aria-hidden="true">🤝</div>
+          <div>
+            <b>Trusted Local Business</b>
+            <span>Known for reliable service and honest guidance in Akola.</span>
+          </div>
+        </div>
+        <div class="why-item reveal">
+          <div class="why-ic" aria-hidden="true">✅</div>
+          <div>
+            <b>Satisfaction Focus</b>
+            <span>We listen, suggest, and deliver with quality checks.</span>
+          </div>
+        </div>
+        <div class="why-item reveal">
+          <div class="why-ic" aria-hidden="true">⏱️</div>
+          <div>
+            <b>On-Time Work</b>
+            <span>Clear timelines for custom work and readiness updates.</span>
+          </div>
+        </div>
+        <div class="why-item reveal">
+          <div class="why-ic" aria-hidden="true">🧰</div>
+          <div>
+            <b>Strong Build Quality</b>
+            <span>Solid joinery and durable structure for daily usage.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <h2>Gallery</h2>
+          <p class="section-sub">A premium preview grid. Replace placeholders with your real product photos for best results.</p>
+        </div>
+      </div>
+
+      <div class="gallery-grid">
+        <!-- ✅ Replace image URLs below with your own photos later -->
+        <div class="g-item reveal" style="background:url('https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1200&q=70') center/cover;">
+          <span>Showcase 01</span>
+        </div>
+        <div class="g-item reveal" style="background:url('https://images.unsplash.com/photo-1505843513577-22bb7d21e455?auto=format&fit=crop&w=1200&q=70') center/cover;">
+          <span>Showcase 02</span>
+        </div>
+        <div class="g-item reveal" style="background:url('https://images.unsplash.com/photo-1549497538-303791108f95?auto=format&fit=crop&w=1200&q=70') center/cover;">
+          <span>Showcase 03</span>
+        </div>
+        <div class="g-item reveal" style="background:url('https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=70') center/cover;">
+          <span>Showcase 04</span>
+        </div>
+        <div class="g-item reveal" style="background:url('https://images.unsplash.com/photo-1615873968403-89e068629265?auto=format&fit=crop&w=1200&q=70') center/cover;">
+          <span>Showcase 05</span>
+        </div>
+        <div class="g-item reveal" style="background:url('https://images.unsplash.com/photo-1616627451712-39ad1b9d8d2d?auto=format&fit=crop&w=1200&q=70') center/cover;">
+          <span>Showcase 06</span>
+        </div>
+        <div class="g-item reveal" style="background:url('https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=1200&q=70') center/cover;">
+          <span>Showcase 07</span>
+        </div>
+        <div class="g-item reveal" style="background:url('https://images.unsplash.com/photo-1582582621959-48d27397dc6f?auto=format&fit=crop&w=1200&q=70') center/cover;">
+          <span>Showcase 08</span>
+        </div>
+        <div class="g-item reveal" style="background:url('https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&w=1200&q=70') center/cover;">
+          <span>Showcase 09</span>
+        </div>
+        <div class="g-item reveal" style="background:url('https://images.unsplash.com/photo-1501045661006-fcebe0257c3f?auto=format&fit=crop&w=1200&q=70') center/cover;">
+          <span>Showcase 10</span>
+        </div>
+        <div class="g-item reveal" style="background:url('https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?auto=format&fit=crop&w=1200&q=70') center/cover;">
+          <span>Showcase 11</span>
+        </div>
+        <div class="g-item reveal" style="background:url('https://images.unsplash.com/photo-1519710887722-0d3c6a1f06b9?auto=format&fit=crop&w=1200&q=70') center/cover;">
+          <span>Showcase 12</span>
+        </div>
+      </div>
+
+      <div class="note">Note: Replace with your real product photos.</div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section id="reviews">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <h2>Customer Reviews</h2>
+          <p class="section-sub">Sample reviews for trust and layout. Replace with real customer feedback anytime.</p>
+        </div>
+      </div>
+
+      <div class="reviews">
+        <div class="review reveal">
+          <div class="stars" aria-label="5 star rating">★★★★★</div>
+          <p>“Very premium finishing. We got a custom wardrobe and the fitting was perfect. Quality feels strong and looks classy.”</p>
+          <div class="who">
+            <span>— Ayesha K., Akola</span>
+            <span class="badge">Verified-style</span>
+          </div>
+        </div>
+
+        <div class="review reveal">
+          <div class="stars" aria-label="5 star rating">★★★★★</div>
+          <p>“Mohammad Iqbal guided us properly on design and budget. Delivery was on time and the polish is excellent.”</p>
+          <div class="who">
+            <span>— Rohan P., Akola</span>
+            <span class="badge">Local customer</span>
+          </div>
+        </div>
+
+        <div class="review reveal">
+          <div class="stars" aria-label="5 star rating">★★★★★</div>
+          <p>“We bought a bed and TV unit. Solid build, clean edges, and premium look. Highly recommended for wooden work.”</p>
+          <div class="who">
+            <span>— Sana M., Akola</span>
+            <span class="badge">Quality finish</span>
+          </div>
+        </div>
+
+        <div class="review reveal">
+          <div class="stars" aria-label="5 star rating">★★★★★</div>
+          <p>“Good pricing for the quality. They understood our requirement quickly and made a custom dining set as per our space.”</p>
+          <div class="who">
+            <span>— Irfan S., Akola</span>
+            <span class="badge">Custom work</span>
+          </div>
+        </div>
+
+        <div class="review reveal">
+          <div class="stars" aria-label="5 star rating">★★★★★</div>
+          <p>“Professional behavior and honest suggestions. Furniture looks premium and feels durable. Will order again.”</p>
+          <div class="who">
+            <span>— Neha D., Akola</span>
+            <span class="badge">Trusted</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quote Form -->
+  <section id="quote">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <h2>Get a Quote</h2>
+          <p class="section-sub">Share your requirement and we’ll get back to you. (Front-end only demo form)</p>
+        </div>
+      </div>
+
+      <div class="quote-grid">
+        <div class="card quote-left reveal">
+          <h3 style="font-family:'Playfair Display',serif; margin:0; font-size:18px;">Quick enquiry • Better suggestions</h3>
+          <p>
+            Tell us what you need (bed, wardrobe, sofa, etc.). If you share your approximate budget, we can suggest the
+            best design and material options quickly.
+          </p>
+          <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap;">
+            <a class="btn btn-gold" href="tel:+918180025006">📞 Call 8180025006</a>
+            <a class="btn" href="https://wa.me/918180025006?text=Hi%20Bilal%20Furniture%2C%20I%20want%20a%20quote%20for%20wooden%20furniture." target="_blank" rel="noopener">💬 WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <form id="quoteForm">
+            <div class="field">
+              <label for="qName">Name</label>
+              <input id="qName" name="name" type="text" placeholder="Your name" required />
+            </div>
+            <div class="field">
+              <label for="qPhone">Phone</label>
+              <input id="qPhone" name="phone" type="tel" placeholder="10-digit number" pattern="[0-9]{10}" required />
+            </div>
+            <div class="field">
+              <label for="qReq">Furniture Requirement</label>
+              <textarea id="qReq" name="requirement" placeholder="Example: Custom wardrobe for 8ft wall, cream + wood finish" required></textarea>
+            </div>
+            <div class="field">
+              <label for="qBudget">Budget (optional)</label>
+              <input id="qBudget" name="budget" type="text" placeholder="Example: ₹25,000 to ₹35,000" />
+            </div>
+
+            <button class="btn btn-gold" type="submit" style="width:100%; justify-content:center;">Request Quote</button>
+            <div class="success" id="successMsg">
+              ✅ Thanks! Your request has been received (demo). Please call or WhatsApp us to confirm your quote details.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Location -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <h2>Contact & Location</h2>
+          <p class="section-sub">Call, WhatsApp, or visit us. All actions below are clickable.</p>
+        </div>
+      </div>
+
+      <div class="contact-grid">
+        <div class="card contact-card reveal">
+          <div style="display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap;">
+            <div>
+              <div style="font-family:'Playfair Display',serif; font-weight:700; font-size:18px;">Bilal Furniture</div>
+              <div style="color:rgba(245,239,230,0.72); font-size:13px; margin-top:4px;">Owner: Mohammad Iqbal</div>
+            </div>
+            <a class="btn btn-gold" href="tel:+918180025006">📞 Call Now</a>
+          </div>
+
+          <div class="contact-item">
+            <div class="why-ic" style="width:38px;height:38px;border-radius:15px;" aria-hidden="true">📞</div>
+            <div>
+              <b>Phone</b>
+              <a href="tel:+918180025006">+91 8180025006</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="why-ic" style="width:38px;height:38px;border-radius:15px;" aria-hidden="true">💬</div>
+            <div>
+              <b>WhatsApp</b>
+              <a href="https://wa.me/918180025006?text=Hi%20Bilal%20Furniture%2C%20I%20want%20to%20enquire%20about%20wooden%20furniture." target="_blank" rel="noopener">Chat on WhatsApp</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="why-ic" style="width:38px;height:38px;border-radius:15px;" aria-hidden="true">📍</div>
+            <div>
+              <b>Address</b>
+              <span>Near Super Saw Mill, Mankarna Plot, Akola</span>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="why-ic" style="width:38px;height:38px;border-radius:15px;" aria-hidden="true">⏰</div>
+            <div>
+              <b>Timings</b>
+              <span>10:00 AM to 5:00 PM</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-wrap reveal">
+          <!-- ✅ MAP EMBED PLACEHOLDER
+               Replace this placeholder with a real Google Maps embed iframe later.
+               You can paste: <iframe src="YOUR_EMBED_LINK" ...></iframe>
+          -->
+          <div class="map-placeholder">
+            <div>
+              <div style="font-family:'Playfair Display',serif; font-weight:800; font-size:20px;">Google Maps Embed Area</div>
+              <p>
+                This is a placeholder block for fast loading on GitHub Pages.
+                Replace with your real Google Maps embed iframe when ready.
+              </p>
+              <p style="margin-top:10px; opacity:.9;">
+                <b>Address:</b> Near Super Saw Mill, Mankarna Plot, Akola
+              </p>
+            </div>
+          </div>
+
+          <div class="map-actions">
+            <!-- ✅ Replace the link with your exact Google Maps business/location link if you have one -->
+            <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Near%20Super%20Saw%20Mill%2C%20Mankarna%20Plot%2C%20Akola" target="_blank" rel="noopener">🗺️ Open in Google Maps</a>
+            <a class="btn btn-gold" href="tel:+918180025006">📞 Call</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-title">Bilal Furniture</div>
+          <p>Near Super Saw Mill, Mankarna Plot, Akola</p>
+          <p><a href="tel:+918180025006">+91 8180025006</a> • <span>10:00 AM to 5:00 PM</span></p>
+          <p style="margin-top:10px; color:rgba(245,239,230,0.68);">
+            Premium wooden furniture • Custom & ready-made • Quality finishing
+          </p>
+        </div>
+
+        <div class="quick">
+          <div class="footer-title">Quick Links</div>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#products">Products</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div>
+          <div class="footer-title">Get in Touch</div>
+          <p>Owner: Mohammad Iqbal</p>
+          <p style="margin-top:6px;">
+            <a href="https://wa.me/918180025006?text=Hi%20Bilal%20Furniture%2C%20I%20want%20to%20enquire%20about%20wooden%20furniture." target="_blank" rel="noopener">WhatsApp</a>
+            •
+            <a href="tel:+918180025006">Call</a>
+          </p>
+          <p style="margin-top:10px; color:rgba(245,239,230,0.66);">
+            Built for fast loading and mobile-first browsing.
+          </p>
+        </div>
+      </div>
+
+      <div class="copy">
+        <span>© <span id="year"></span> Bilal Furniture. All rights reserved.</span>
+        <span style="color:rgba(245,239,230,0.55);">Made with premium design • GitHub Pages ready</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // =========================
+    // Mobile Menu Toggle
+    // =========================
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileNav = document.getElementById('mobileNav');
+
+    if (menuBtn && mobileNav) {
+      menuBtn.addEventListener('click', () => {
+        const isOpen = mobileNav.style.display === 'block';
+        mobileNav.style.display = isOpen ? 'none' : 'block';
+        menuBtn.setAttribute('aria-expanded', String(!isOpen));
+      });
+
+      // Close menu on click
+      document.querySelectorAll('.m-link').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileNav.style.display = 'none';
+          menuBtn.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
+
+    // =========================
+    // Reveal on scroll (subtle animations)
+    // =========================
+    const reveals = document.querySelectorAll('.reveal');
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) e.target.classList.add('show');
+      });
+    }, { threshold: 0.12 });
+
+    reveals.forEach(el => obs.observe(el));
+
+    // =========================
+    // Quote form (front-end only)
+    // =========================
+    const quoteForm = document.getElementById('quoteForm');
+    const successMsg = document.getElementById('successMsg');
+
+    if (quoteForm) {
+      quoteForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        if (successMsg) successMsg.style.display = 'block';
+        quoteForm.reset();
+
+        // Auto-hide after a few seconds (optional)
+        setTimeout(() => {
+          if (successMsg) successMsg.style.display = 'none';
+        }, 5000);
+      });
+    }
+
+    // =========================
+    // Footer year
+    // =========================
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
